@@ -30,7 +30,7 @@ function createCharacterButton(character) {
     characterButton.innerHTML = character;
     characterButton.style.fontSize = "large";
     characterButton.onmousedown = function (event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent focus change which would deselect input
         var element = document.activeElement;
         if (element.tagName.toUpperCase() !== "INPUT")
             return;
@@ -45,7 +45,7 @@ function createCategoryButton(categoryName, characters) {
     categoryButton.id = "character-category-" + categoryName
 
     categoryButton.onmousedown = function (event) {
-        event.preventDefault();
+        event.preventDefault();  // Prevent focus change which would deselect input
         while (characterGroup.firstChild) {
             characterGroup.removeChild(characterGroup.lastChild);
         }
@@ -66,8 +66,6 @@ function createCategoryButton(categoryName, characters) {
 }
 
 function createInterface(characterData) {
-    // var anchorElement = document.querySelector("#anchor");
-
     var mainGroup = document.createElement("div");
     mainGroup.style.top = "50px";
     mainGroup.style.position = "fixed";
@@ -89,10 +87,9 @@ function createInterface(characterData) {
     }
 
     categoryGroup.style.display = "none";
-    //categoryGroup.style.float = "left";
 
     mainButton.onmousedown = function (event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent focus change which would deselect input
         if (categoryGroup.style.display == "none") {
             categoryGroup.style.display = "grid"
         } else {
