@@ -5,7 +5,7 @@ Ugly Demo: https://dainst.github.io/special-character-input
 
 ## General 
 * The script is originally intended to be used in [Koha](https://koha-community.org), but should work on any website.
-* The script automatically attaches a button (&#x2328;) to your page's body element, fixed to the top right. 
+* The script automatically attaches a button (⌨️) to your page's body element, fixed to the top right. 
 * You can configure your character groups by editing the [specialCharacters.json](specialCharacters.json).
 
 ## Setup in Koha

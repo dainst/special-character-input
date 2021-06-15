@@ -73,7 +73,7 @@ function createInterface(characterData) {
     mainGroup.style.right = "2px";
 
     var mainButton = document.createElement("button");
-    mainButton.innerHTML = "&#x2328;"; // UTF-8 Code for keyboard symbol
+    mainButton.innerHTML = "⌨";
     mainButton.style.width = "100%";
 
     var categoryGroup = document.createElement("div");
