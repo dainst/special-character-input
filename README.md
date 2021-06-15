@@ -1,6 +1,8 @@
 # special-character-input
 Plain javascript for adding minimalistic character selection. 
 
+Ugly Demo: https://dainst.github.io/special-character-input
+
 ## General 
 * The script is originally intended to be used in [Koha](https://koha-community.org), but should work on any website.
 * The script automatically attaches a button (&#x2328;) to your pages <body> and is fixed to the top right of your page. 
