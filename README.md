@@ -1,5 +1,5 @@
 # special-character-input
-Plain javascript for adding minimalistic character selection. 
+Plain javascript for adding a minimalistic UTF-8 character selection. 
 
 Ugly Demo: https://dainst.github.io/special-character-input
 
