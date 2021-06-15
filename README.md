@@ -1,10 +1,10 @@
 # special-character-input
-Simple javascript for adding minimalistic character selection. 
+Plain javascript for adding minimalistic character selection. 
 
 ## General 
 * The script is originally intended to be used in [Koha](https://koha-community.org), but should work on any website.
-* The script automatically attaches to your pages <body> and is fixed to the top right of your page. 
-* You can configure your character groups by editing the specialCharacters.json.
+* The script automatically attaches a button (&#x2328;) to your pages <body> and is fixed to the top right of your page. 
+* You can configure your character groups by editing the [specialCharacters.json](specialCharacters.json).
 
 ## Setup in Koha
 We added the following function to our IntranetUserJS:
