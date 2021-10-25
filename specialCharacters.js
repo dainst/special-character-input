@@ -32,7 +32,7 @@ function createCharacterButton(character) {
     characterButton.onmousedown = function (event) {
         event.preventDefault(); // Prevent focus change which would deselect input
         var element = document.activeElement;
-        if (element.tagName.toUpperCase() !== "INPUT")
+        if (element.tagName.toUpperCase() !== "INPUT" && element.tagName.toUpperCase() !== "TEXTAREA")
             return;
         element.value += character;
     }
