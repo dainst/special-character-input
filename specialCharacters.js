@@ -34,7 +34,12 @@ function createCharacterButton(character) {
         var element = document.activeElement;
         if (element.tagName.toUpperCase() !== "INPUT" && element.tagName.toUpperCase() !== "TEXTAREA")
             return;
-        element.value += character;
+
+        var cursorStartPosition = element.selectionStart;
+        var cursorEndposition = element.selectionEnd;
+        element.value = element.value.slice(0, cursorStartPosition) + character + element.value.slice(cursorEndposition);
+
+        element.selectionStart = element.selectionEnd = cursorStartPosition + 1;
     }
     return characterButton;
 }
