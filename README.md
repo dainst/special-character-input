@@ -7,6 +7,7 @@ Ugly Demo: https://dainst.github.io/special-character-input
 * The script is originally intended to be used in [Koha](https://koha-community.org), but should work on any website.
 * The script automatically attaches a button (⌨️) to your page's body element, fixed to the top right. 
 * You can configure your character groups by editing the [specialCharacters.json](specialCharacters.json).
+* Backlink to Koha Wiki: https://wiki.koha-community.org/wiki/SpecialCharacters
 
 ## Setup in Koha
 We added the following function to our IntranetUserJS:
